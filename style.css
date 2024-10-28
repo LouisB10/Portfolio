@@ -1,0 +1,121 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --clear: rgba(255, 255, 255, 0.85);
+  --clearmid: rgba(255, 255, 255, 0.5);
+  --clearplus: rgba(255, 255, 255, 0.15);
+  --dark: rgba(41, 41, 41, 0.85);
+  --darkmid: rgba(41, 41, 41, 0.5);
+  --darkplus: rgba(41, 41, 41, 0.15);
+  --bg: rgb(10,10,13);
+  --red:#D8315B;
+  --clearblue:#3E92CC;
+  --blue:#0A2463;
+  --blackbg:#1E1B18;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Reem Kufi", sans-serif;
+  overflow-x: hidden;
+  font-weight: 400;
+  color: var(--white);
+}
+#texture{
+  left: 0px;
+  z-index: -99;
+  width: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  transform: translateY(0px);
+  filter: contrast(120%) brightness(120%);
+  top: 0px;
+  position: fixed;
+  height: calc(200px + 100vh);
+}
+body {
+  background-image: url(img/header-gradient.svg), url(img/footer-gradient.svg);
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  background-size: 1400px;
+  background-color: var(--bg);
+}
+.flex-col {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radius-1{
+  border-radius: 1rem;
+}
+.radius-2{
+  border-radius: 2rem;
+}
+.gap-1{
+  gap: 1rem;
+}
+.gap-2{
+  gap: 2rem;
+}
+.padding-1{
+  padding: 1rem;
+}
+.padding-2{
+  padding: 2rem;
+}
+.w-full{
+  width: 100%;
+}
+.h-full{
+  height: 100%;
+}
+h2 {
+  font-size: 3rem;
+}
+/* 
+	  ================= SECTION =================
+*/
+section{
+  height: 100vh;
+  align-items: flex-start !important;
+}
+.container{
+  border: 1px solid var(--darkmid);
+  background-color: var(--darkmid);
+  backdrop-filter: blur(10px);
+  width: 95%;
+}
+.left_container,.right_container {
+  width: 40%;
+  padding:3rem 0rem;
+}
+/* 
+	  ================= LEFT-CONTAINER =================
+*/
+.left_container .container{
+  height: 12.5rem;
+}
+.left_container .container:first-of-type img{
+  height: 75%;
+  border: 1px solid var(--darkmid);
+}
+.left_container .container:first-of-type{
+ justify-content: space-between;
+}
+/* 
+	  ================= RIGHT-CONTAINER =================
+*/
+.right_container .container{
+  height: 25rem;
+}

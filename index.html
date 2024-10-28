@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Page carte interactive" />
+    <title>Louis BOUSQUET - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="w-full gap-1 flex">
+      <div class="left_container gap-1 flex-col">
+        <div class="container flex radius-1 padding-1">
+          <img src="img/pdp.jpg" alt="" class="radius-1" />
+          <div class="gap-1 flex-col">
+            <p>LOUIS BOUSQUET</p>
+            <p>WEB DEVELOPER</p>
+          </div>
+          <nav>
+            <ul class="flex gap-1">
+              <li><a href="" target="_blank"></a></li>
+              <li><a href="" target="_blank"></a></li>
+              <li><a href="https://github.com/LouisB10" target="_blank"></a></li>
+              <li><a href="https://www.linkedin.com/in/louis-bousquet-7077aa281/" target="_blank"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container flex-col radius-2 padding-1">
+          <div class="gap-1 flex">
+            <h2>SKILLS</h2>
+            <img src="img/arrow.png" alt="" />
+          </div>
+          <div class="flex"></div>
+        </div>
+      </div>
+      <div class="right_container gap-1 flex-col">
+        <iframe
+          class="w-full radius-1"
+          title="deezer-widget"
+          src="https://widget.deezer.com/widget/dark/album/486213345"
+          width="100%"
+          height="300"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media; clipboard-write"
+        ></iframe>
+        <div class="container flex-col radius-2 padding-1">
+          <div class="gap-1 flex"><h2>PROJECTS</h2></div>
+        </div>
+      </div>
+      <svg id="texture">
+        <filter id="noise">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".8"
+            numOctaves="4"
+            stitchTiles="stitch"
+          ></feTurbulence>
+          <feColorMatrix type="saturate" values="0"></feColorMatrix>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#noise)"></rect>
+      </svg>
+    </section>
+  </body>
+</html>
