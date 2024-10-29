@@ -14,29 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
       rel="stylesheet"
     />
+      <!-- Favicon -->
+      <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png'">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      
   </head>
-  <body>
-    <section class="w-full gap-1 flex">
+  <body >
+    <section class="w-full gap-1 flex scrollbar">
       <div class="left_container gap-1 flex-col">
-        <div class="container flex radius-1 padding-1">
-          <img src="img/pdp.jpg" alt="" class="radius-1" />
-          <div class="gap-1 flex-col">
-            <p>LOUIS BOUSQUET</p>
-            <p>WEB DEVELOPER</p>
-          </div>
-          <nav>
-            <ul class="flex gap-1">
-              <li><a href="" target="_blank"></a></li>
-              <li><a href="" target="_blank"></a></li>
-              <li><a href="https://github.com/LouisB10" target="_blank"></a></li>
-              <li><a href="https://www.linkedin.com/in/louis-bousquet-7077aa281/" target="_blank"></a></li>
+        <div class="profil container flex radius-1 padding-1">
+          <img src="img/pdp.jpg" alt="" class="logo radius-1" />
+          <div class="navbar flex-col gap-1">
+            <div class="flex-col">
+              <p>LOUIS BOUSQUET</p>
+              <p>WEB DEVELOPER</p>
+            </div>
+            <ul class="flex  radius-1">
+                <li><a href="img/cv.pdf" target="_blank" class="cv flex"><img src="img/icon/nav/cv.png" alt="Icon CV"></a></li>
+                <li><a href="mailto:louisbousquet13@gmail.com" target="_blank" class="flex"><img src="img/icon/nav/email.png" alt="Icon E-mail"></a></li>
+                <li><a href="https://github.com/LouisB10" target="_blank" class="flex"><img src="img/icon/nav/github.png" alt="Icon Github"></a></li>
+                <li><a href="https://www.linkedin.com/in/louis-bousquet-7077aa281/" target="_blank" class="flex"><img src="img/icon/nav/linkedin.png" alt="Icon Linkedin"></a></li>
+                <li><a href="https://x.com/louisbsq" target="_blank" class="flex"><img src="img/icon/nav/twitter.png" alt="Icon Twitter"></a></li>
             </ul>
-          </nav>
+          </div>
         </div>
-        <div class="container flex-col radius-2 padding-1">
+        <div class="skills container flex-col radius-1 padding-1">
           <div class="gap-1 flex">
             <h2>SKILLS</h2>
-            <img src="img/arrow.png" alt="" />
+            <img src="img/icon/arrow.png" alt="" />
           </div>
           <div class="flex"></div>
         </div>
@@ -45,15 +54,35 @@
         <iframe
           class="w-full radius-1"
           title="deezer-widget"
-          src="https://widget.deezer.com/widget/dark/album/486213345"
+          src="https://widget.deezer.com/widget/dark/album/556935992"
           width="100%"
           height="300"
           frameborder="0"
           allowtransparency="true"
           allow="encrypted-media; clipboard-write"
         ></iframe>
-        <div class="container flex-col radius-2 padding-1">
-          <div class="gap-1 flex"><h2>PROJECTS</h2></div>
+        <div class="projects container flex-col radius-2 padding-1">
+          <div class="p_title flex w-full">
+            <div class="gap-1 flex"><h2>JIRAYA</h2><img src="img/icon/arrow.png" alt="" /></div>
+            <div class="techno gap-1 flex">
+              <a href="https://symfony.com" target="_blank" rel="noopener noreferrer" class="flex gap-1 radius-1">SYMFONY<img src="img/icon/techno/symfony.png" alt=""></a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="flex gap-1 radius-1">JAVASCRIPT<img src="img/icon/techno/js.png" alt=""></a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"  class="flex gap-1 radius-1">CSS<img src="img/icon/techno/css.png" alt=""></a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="projects container flex-col radius-2 padding-1">
+          <div class="p_title flex w-full">
+            <div class="gap-1 flex"><h2>LEBIVOUAC</h2><img src="img/icon/arrow.png" alt="" /></div>
+            <div class="p_title techno gap-1 flex">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="flex gap-1 radius-1">JAVASCRIPT<img src="img/icon/techno/js.png" alt=""></a>
+              <a href="https://symfony.com" target="_blank" rel="noopener noreferrer" class="flex gap-1 radius-1">HTML<img src="img/icon/techno/html.png" alt=""></a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"  class="flex gap-1 radius-1">CSS<img src="img/icon/techno/css.png" alt=""></a>
+            </div>
+          </div>
+         
+
         </div>
       </div>
       <svg id="texture">
