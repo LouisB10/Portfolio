@@ -30,14 +30,16 @@ html {
   --bl-cp: rgba(10, 36, 99, 0.15);
 
   --bbg: rgb(30, 27, 24);
-  --bbg-c: rgba(30, 27, 24, 0.85);
-  --bbg-cm: rgba(30, 27, 24, 0.5);
-  --bbg-cp: rgba(30, 27, 24, 0.15);
 
   --y: rgb(247, 223, 30);
   --y-c: rgba(247, 223, 30, 0.85);
   --y-cm: rgba(247, 223, 30, 0.5);
   --y-cp: rgba(247, 223, 30, 0.15);
+
+  --g: rgb(43, 131, 47);
+  --g-c: rgba(43, 131, 47, 0.85);
+  --g-cm: rgba(43, 131, 47, 0.5);
+  --g-cp: rgba(43, 131, 47, 0.15);
 
   --dl-bg: linear-gradient(90deg, rgba(10, 36, 99, 0.2) 0%, rgba(62, 146, 204, 0.2) 100%);
 }
@@ -267,13 +269,21 @@ ul li a img {
 .techno a img{
   height: 20px;
 }
+.symfony{
+  background-color: var(--g-cp) !important;
+  border: 1px solid var(--g-cm) !important;
+}
+.symfony:hover{
+  background-color: var(--g-cm) !important;
+  border: 1px solid var(--g-c) !important;
+}
 .techno a:first-of-type{
-  background-color: var(--cb-cp);
-  border: 1px solid var(--cb-cm);
+  background-color: var(--r-cp);
+  border: 1px solid var(--r-cm);
 }
 .techno a:first-of-type:hover{
-  background-color: var(--cb-cm);
-  border: 1px solid var(--cb-c);
+  background-color: var(--r-cm);
+  border: 1px solid var(--r-c);
 }
 .techno a:nth-child(2){
   background-color: var(--y-cp);
@@ -284,10 +294,10 @@ ul li a img {
   border: 1px solid var(--y-c);
 }
 .techno a:last-of-type{
-  background-color: var(--r-cp);
-  border: 1px solid var(--r-cm);
+  background-color: var(--cb-cp);
+  border: 1px solid var(--cb-cm);
 }
 .techno a:last-of-type:hover{
-  background-color: var(--r-cm);
-  border: 1px solid var(--r-c);
+  background-color: var(--cb-cm);
+  border: 1px solid var(--cb-c);
 }
